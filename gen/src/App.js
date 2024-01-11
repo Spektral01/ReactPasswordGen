@@ -189,7 +189,6 @@ function App() {
     savePasswordToBackend(password, {
       ipAddress: 'some ip :D (idk how safe to get an IP) ', 
       userAgent: navigator.userAgent,
-      // Добавьте другие данные о пользователе по необходимости
     });
     setCopied((prevCopied) => {
       const newCopied = [...prevCopied];

@@ -3,14 +3,14 @@ const bodyParser = require('body-parser');
 const fs = require('fs');
 const os = require('os');
 const requestIp = require('request-ip');
-const cors = require('cors'); // Добавьте эту строку
+const cors = require('cors'); 
 
 const app = express();
 const port = 3001;
 
 app.use(bodyParser.json());
 app.use(requestIp.mw());
-app.use(cors()); // Добавьте эту строку
+app.use(cors()); 
 
 app.post('/save-password', (req, res) => {
   try {
